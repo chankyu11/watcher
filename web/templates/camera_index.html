@@ -1,0 +1,23 @@
+<html> 
+    <head>
+    <link rel="stylesheet" href="../static/style_c_index.css">   
+    
+
+    </head>
+    <body>
+        <p class="font" style="color:white;">video list </p>
+        {%for row in rows%}
+        
+        <a class ="btn" href = '/index?id={{row[0]}}'>
+            <button class="btn">
+            <img class="btn-img" src="static\img\monitor.png" height=330 width=400><br>
+            영상{{row[0]}}
+			</button>
+        </a>
+        
+        
+        {% endfor %}
+
+    </body>
+
+</html> 

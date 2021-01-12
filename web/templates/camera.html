@@ -1,0 +1,18 @@
+{%for row in rows%}
+ 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning!!</title>
+    <link rel="stylesheet" href="../static/style_camera.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <section class = "video">
+        <img src="{{ url_for('video_feed') }}?id={{row[0]}}"/>
+    </section>
+    
+</body>
+</html>
+ 
+{% endfor %}
